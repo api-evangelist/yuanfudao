@@ -1,0 +1,220 @@
+generated: '2026-09-04'
+method: searched
+source: >-
+  https://github.com/kanyun-inc (19 public repos, org "看云控股技术团队", techbd@kanyun.com), with
+  version + published dates read from registry.npmjs.org, repo1.maven.org maven-metadata.xml,
+  search.maven.org solrsearch and trunk.cocoapods.org on 2026-09-04.
+summary:
+  organization: kanyun-inc
+  organization_name: 看云控股技术团队 (Kanyun Holdings engineering team)
+  organization_url: https://github.com/kanyun-inc
+  public_repos: 19
+  packages_found: 13
+  api_client_sdks: 0
+important: >-
+  NONE of these packages is a client SDK for a Yuanfudao API. Yuanfudao publishes no public API,
+  so there is nothing for an SDK to wrap. Everything below is general-purpose open-source
+  engineering output — mobile/Kotlin libraries, a distributed-ML stack, and a recent generation of
+  internal AI-agent developer tooling — released by the company's engineering org. For that reason
+  no `SDKs` pointer is emitted in apis.yml; only `Packages`. Counting these as API SDKs would
+  credit Yuanfudao with a developer surface it does not ship.
+packages:
+
+- name: reskill
+  registry: npm
+  url: https://www.npmjs.com/package/reskill
+  repository: https://github.com/kanyun-inc/reskill
+  language: TypeScript
+  official: true
+  api_client: false
+  category: ai-agent-tooling
+  description: AI Skills package manager — git-based management/publishing of agent skills.
+  version: 1.26.0
+  published: '2026-08-11'
+
+- name: docz-cli
+  registry: npm
+  url: https://www.npmjs.com/package/docz-cli
+  repository: https://github.com/kanyun-inc/docz-cli
+  language: TypeScript
+  official: true
+  api_client: false
+  category: ai-agent-tooling
+  description: DocSync CLI — read and write company documents from the terminal and AI agents.
+  version: 0.12.1
+  published: '2026-09-01'
+
+- name: octo-cli
+  registry: npm
+  url: https://www.npmjs.com/package/octo-cli
+  repository: https://github.com/kanyun-inc/octo-cli
+  language: TypeScript
+  official: true
+  api_client: false
+  category: internal-tooling
+  description: Octopus Observability CLI — logs, alerts, traces and metrics.
+  version: 1.5.0
+  published: '2026-08-11'
+
+- name: agent-aware
+  registry: npm
+  url: https://www.npmjs.com/package/agent-aware
+  repository: https://github.com/kanyun-inc/agent-aware
+  language: TypeScript
+  official: true
+  api_client: false
+  category: ai-agent-tooling
+  description: Bridges the gap between agents and user actions.
+  version: 1.0.0
+  published: '2026-07-12'
+
+- name: rush-shimo-cli
+  registry: npm
+  url: https://www.npmjs.com/package/rush-shimo-cli
+  repository: https://github.com/kanyun-inc/rush-shimo-cli
+  language: TypeScript
+  official: true
+  api_client: false
+  category: ai-agent-tooling
+  description: >-
+    Shimo Docs (石墨文档) CLI + SDK + MCP server. Note this is a client for a THIRD-PARTY product
+    (Shimo), not for a Yuanfudao API.
+  version: 0.1.0
+  published: '2026-04-08'
+
+- name: '@kanyun-ai-infra/jira-cli'
+  registry: npm
+  url: https://www.npmjs.com/package/@kanyun-ai-infra/jira-cli
+  repository: https://github.com/kanyun-inc/jira-cli
+  language: TypeScript
+  official: true
+  api_client: false
+  category: ai-agent-tooling
+  description: >-
+    Jira Server CLI for AI agents. Client for a third-party product (Atlassian Jira), not a
+    Yuanfudao API.
+  version: 0.1.0
+  published: '2026-04-01'
+
+- name: '@kanyun/ai-explore-review-loop-plugin'
+  registry: npm
+  url: https://github.com/kanyun-inc/ai-explore-review-loop-plugin
+  repository: https://github.com/kanyun-inc/ai-explore-review-loop-plugin
+  language: JavaScript
+  official: true
+  api_client: false
+  category: ai-agent-tooling
+  description: Claude Code plugin for durable GitHub PR review loops.
+  version: null
+  published: null
+  note: >-
+    Declares name "@kanyun/ai-explore-review-loop-plugin" version 0.1.0 in its repository
+    package.json, but registry.npmjs.org returned "Not found" on 2026-09-04 — checked, nothing
+    published. Distributed from the GitHub repository only.
+
+- name: com.kanyun.kace:kace-runtime
+  registry: maven-central
+  url: https://repo1.maven.org/maven2/com/kanyun/kace/kace-runtime/
+  repository: https://github.com/kanyun-inc/Kace
+  language: Kotlin
+  official: true
+  api_client: false
+  category: android-library
+  description: >-
+    Kace — Kotlin Android Compatible Extensions; migration path off kotlin-android-extensions.
+  version: 2.2.0-1.2.0
+  published: '2026-01-14'
+
+- name: com.kanyun.kudos:kudos-runtime
+  registry: maven-central
+  url: https://repo1.maven.org/maven2/com/kanyun/kudos/kudos-runtime/
+  repository: https://github.com/kanyun-inc/Kudos
+  language: Kotlin
+  official: true
+  api_client: false
+  category: serialization-library
+  description: Deserialization utilities for Kotlin classes with Gson, Jackson and Android JsonReader.
+  version: 1.9.20-1.1.1
+  published: '2023-12-05'
+
+- name: com.fenbi:ytk-learn
+  registry: maven-central
+  url: https://search.maven.org/artifact/com.fenbi/ytk-learn
+  repository: https://github.com/kanyun-inc/ytk-learn
+  language: Java
+  official: true
+  api_client: false
+  category: machine-learning
+  description: Distributed machine-learning library (GBDT, GBRT, MLR, FM, FFM, LR, Softmax).
+  version: 0.0.3
+  published: '2018-01-23'
+  note: >-
+    Published under the com.fenbi groupId — Fenbi/Yuantiku was the company's original engineering
+    brand before the Yuanfudao and Kanyun Holdings names.
+
+- name: com.fenbi.mp4j:ytk-mp4j
+  registry: maven-central
+  url: https://search.maven.org/artifact/com.fenbi.mp4j/ytk-mp4j
+  repository: https://github.com/kanyun-inc/ytk-mp4j
+  language: Java
+  official: true
+  api_client: false
+  category: machine-learning
+  description: Multi-process, multi-thread collective message-passing library for distributed ML.
+  version: 0.0.1
+  published: '2017-05-18'
+
+- name: YTKNetwork
+  registry: cocoapods
+  url: https://cocoapods.org/pods/YTKNetwork
+  repository: https://github.com/kanyun-inc/YTKNetwork
+  language: Objective-C
+  official: true
+  api_client: false
+  category: ios-library
+  description: High-level iOS HTTP request library built on AFNetworking (6,547 GitHub stars).
+  version: 3.0.6
+  published: '2021-04-22'
+
+- name: YTKKeyValueStore
+  registry: cocoapods
+  url: https://cocoapods.org/pods/YTKKeyValueStore
+  repository: https://github.com/kanyun-inc/YTKKeyValueStore
+  language: Objective-C
+  official: true
+  api_client: false
+  category: ios-library
+  description: Simple key-value storage backed by SQLite (2,122 GitHub stars).
+  version: 0.1.2
+  published: '2014-12-09'
+
+unpublished_repositories:
+- name: rush-plugin
+  url: https://github.com/kanyun-inc/rush-plugin
+  note: Claude Code plugin wrapping the reskill CLI; no package.json name resolved, no registry entry.
+- name: claude-dev-setup
+  url: https://github.com/kanyun-inc/claude-dev-setup
+  note: Shell/documentation repo, not a distributable package.
+- name: flyboard
+  url: https://github.com/kanyun-inc/flyboard
+  note: Data-visualization application, last pushed 2016-01-19. No registry distribution.
+- name: new-bull
+  url: https://github.com/kanyun-inc/new-bull
+  note: Internal engineering training curriculum (新牛培训计划). Not a package.
+- name: commonsense-rc
+  url: https://github.com/kanyun-inc/commonsense-rc
+  note: >-
+    Research code for "Yuanfudao at SemEval-2018 Task 11". Paper artifact, not a package. This is
+    the only repository in the org that carries the Yuanfudao name directly.
+- name: fairseq-gec
+  url: https://github.com/kanyun-inc/fairseq-gec
+  note: Research code for a grammatical-error-correction paper. Not a package.
+
+decay_signal:
+  observation: >-
+    A clean two-generation split. The mobile/ML libraries that carry the company's public
+    reputation (YTKNetwork 6.5k stars, YTKKeyValueStore 2.1k, ytk-learn 349) last published
+    between 2014 and 2021 and are effectively dormant. Everything published in 2026 is
+    AI-agent developer tooling (reskill, docz-cli, octo-cli, agent-aware, jira-cli,
+    rush-shimo-cli) shipped in the last six months, which is where the engineering org is
+    currently active. None of either generation is an API client.

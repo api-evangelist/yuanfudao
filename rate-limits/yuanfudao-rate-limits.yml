@@ -1,0 +1,16 @@
+generated: '2026-09-04'
+method: searched
+source: >-
+  Searched Yuanfudao and Kanyun public surfaces on 2026-09-04 for documented API rate limits or
+  rate-limit response headers. No developer documentation exists to state them.
+limit_count: 0
+rate_limits: []
+headers: []
+note: >-
+  Yuanfudao publishes no API, no developer documentation and no rate-limit reference, so there is
+  nothing to record — no scope, window, burst, exhaustion status code or RateLimit-* / Retry-After
+  header contract. No live unauthenticated endpoint was observed either: robots.txt on
+  www.yuanfudao.com disallows /api/, which was honored.
+no_pointer_reason: >-
+  No `RateLimits` pointer is emitted in apis.yml — this artifact records an ABSENCE, and the
+  pointer is a presence check.

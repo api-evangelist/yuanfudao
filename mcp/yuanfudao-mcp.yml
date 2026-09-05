@@ -1,0 +1,40 @@
+generated: '2026-09-04'
+method: searched
+source: >-
+  Web search for a Yuanfudao/Kanyun hosted MCP server, plus enumeration of the kanyun-inc GitHub
+  organization (19 public repos) and probes of /.well-known/* on six Yuanfudao and Kanyun hosts,
+  2026-09-04.
+status: none
+name: Yuanfudao MCP server
+deployment:
+  mode: none
+  endpoint: null
+  install: null
+  package: null
+  auth: unknown
+  verified: searched
+tools: []
+finding: >-
+  Yuanfudao ships no MCP server for its own products. There is no hosted endpoint, no stdio
+  package, and no candidate tool list can be derived because the company publishes no OpenAPI or
+  any other machine-readable contract to derive one from.
+near_misses:
+- repository: https://github.com/kanyun-inc/rush-shimo-cli
+  package: rush-shimo-cli (npm, 0.1.0, published 2026-04-08)
+  what_it_is: >-
+    An MCP server published BY Kanyun that reads Shimo Docs (石墨文档) — a third-party product. It
+    exposes another company's documents to agents, not any Yuanfudao surface. Recorded here so a
+    later pass does not mistake it for a Yuanfudao MCP server; deliberately NOT wired as an
+    MCPServer pointer.
+- repository: https://github.com/kanyun-inc/ai-explore-review-loop-plugin
+  what_it_is: >-
+    A Claude Code plugin using "ordinary MCP" against GitHub and Supabase. Internal engineering
+    tooling, not a Yuanfudao API surface.
+- repository: https://github.com/kanyun-inc/reskill
+  what_it_is: >-
+    An agent-skills package manager (npm 1.26.0, 2026-08-11). Agent-ecosystem tooling, unrelated
+    to any Yuanfudao product API.
+note: >-
+  No `MCPServer` pointer is emitted in apis.yml. The organization is visibly investing in
+  agent-facing developer tooling for its own engineers, but none of it exposes a Yuanfudao
+  product to an external agent.

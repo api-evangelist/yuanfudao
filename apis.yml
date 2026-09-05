@@ -1,8 +1,17 @@
 aid: yuanfudao
 name: Yuanfudao
-description: 'Yuanfudao is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Yuanfudao (猿辅导) is a Beijing-based online education technology company founded in 2012 and
+  operated under Kanyun Holdings (看云控股集团). Its consumer products include the Yuanfudao tutoring
+  platform, Zebra AI Learning (斑马AI学), Xiaoyuan AI / Xiaoyuan Kousuan (小猿AI / 小猿口算), Xiaoyuan
+  Souti (小猿搜题), Ape Programming (猿编程) and Haitun Zixi (海豚自习), delivering live classes, smart
+  practice and problem-solving analysis to K-12 and preschool learners in China. The company
+  publishes no public developer program, API reference or machine-readable API contract; its
+  visible public engineering surface is the kanyun-inc GitHub organization of open-source
+  libraries and developer tooling, and the Kanyun Security Response Center (YSRC) vulnerability
+  disclosure program at security.kanyun.com.
 url: https://raw.githubusercontent.com/api-evangelist/yuanfudao/refs/heads/main/apis.yml
+image: https://yfdpc.fbcontent.cn/s/logo-563d697805.svg
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +21,13 @@ created: '2026-09-04'
 modified: '2026-09-04'
 tags:
 - Company
+- Education
+- EdTech
+- Online Learning
+- Tutoring
+- Artificial Intelligence
+- Mobile Applications
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +36,53 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://www.yuanfudao.com/
+- type: SecondaryMarket
   url: https://forgeglobal.com/yuanfudao_stock/
+- type: GitHubOrganization
+  url: https://github.com/kanyun-inc
+- type: Security
+  url: https://security.kanyun.com/
+- type: VulnerabilityDisclosure
+  url: security/yuanfudao-vulnerability-disclosure.yml
+- type: PrivacyPolicy
+  url: https://m.yuanfudao.com/native/help/privacy-policy
+- type: TermsOfService
+  url: https://m.yuanfudao.com/native/help/service-agreement
+- type: Support
+  url: https://www.yuanfudao.com/u/feedback
+- type: Login
+  url: https://www.yuanfudao.com/u/
+- type: Packages
+  url: packages/yuanfudao-packages.yml
+- type: LLMsTxt
+  url: llms/yuanfudao-llms.txt
+- type: DomainSecurity
+  url: security/yuanfudao-domain-security.yml
+x-enrichment:
+  date: '2026-09-04'
+  status: minimal
+  artifacts_added: 8
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Yuanfudao ships only consumer learning apps: www.yuanfudao.com returns a marketing site with
+    no developer link, its robots.txt disallows /api/ and /sdk/, the kanyun-inc GitHub org holds
+    19 repos of general-purpose OSS and internal AI tooling but zero API clients, and all seven
+    /.well-known/ paths 404 on all six Yuanfudao and Kanyun hosts probed.
+  evidence:
+  - url: https://www.yuanfudao.com/
+    status: 200
+  - url: https://www.yuanfudao.com/openapi.json
+    status: 404
+  - url: https://ape-api.yuanfudao.com/openapi.json
+    status: 404
+  - url: https://www.yuanfudao.com/.well-known/api-catalog
+    status: 404
+  - url: https://www.kanyun.com/llms.txt
+    status: 404
+  - url: https://security.kanyun.com/
+    status: 200
+  checked: '2026-09-04'

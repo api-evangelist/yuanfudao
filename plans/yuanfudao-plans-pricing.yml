@@ -1,0 +1,15 @@
+generated: '2026-09-04'
+method: searched
+source: >-
+  https://www.yuanfudao.com/ and product sites (xiaoyuankousuan.com, yuansouti.com,
+  banmaaike.com, ybccode.com), searched 2026-09-04 for an API pricing or developer plans page.
+plan_count: 0
+plans: []
+note: >-
+  Yuanfudao publishes no API and therefore no API plans or pricing. The company sells consumer
+  course packages and app subscriptions through its own apps and account centre, priced per
+  course and per grade level rather than as a published rate card; there is no developer-facing
+  pricing surface of any kind. An honest zero, not a gap in this pass.
+no_pointer_reason: >-
+  No `Plans` or `Pricing` pointer is emitted in apis.yml — this artifact records the ABSENCE of
+  API plans, and a pointer would assert that Yuanfudao publishes a developer pricing page.
